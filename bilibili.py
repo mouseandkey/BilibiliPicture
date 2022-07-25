@@ -35,7 +35,9 @@ def dynamic(uid, uname, dynamic_id):
     desc = {}
     desc_ = ["type", "rid", "dynamic_id", "timestamp"]
     while True:
-        URL = f"https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?_device=android&channel=bili&from=space&host_uid={uid}&https_url_req=0&mobi_app=android&need_top=1&offset_dynamic_id={next_offset}&page={page}&platform=android&qn=32&src=bili&visitor_uid=229027149"
+	# 如果要运行，请在visitor_uid这里填写自己的id。如果没有就直接删掉试试
+	visitor_uid = 
+        URL = f"https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/space_history?_device=android&channel=bili&from=space&host_uid={uid}&https_url_req=0&mobi_app=android&need_top=1&offset_dynamic_id={next_offset}&page={page}&platform=android&qn=32&src=bili&visitor_uid={visitor_uid}"
         resp = requests.get(URL)
         json_ = resp.json()
         #
