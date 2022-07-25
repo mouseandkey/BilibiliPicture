@@ -17,13 +17,10 @@ def download_pic(url, uname,name):
     print(path)
 
 def dynamic(uid, uname, dynamic_id):
-    # PATH = "E://bilibili//秋风笑里有明哲//"
     PATH = f"E://bilibili//{uname}//"
     next_offset = ""
     page = 1
     dynamic_new = 0
-    # uid = 194846269
-    # uid = 424692353
 
     # 上线发动态时间统计
     # try:
